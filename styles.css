@@ -36,3 +36,20 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #d0d6d6; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #384b49; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5e7d78; 
+}
