@@ -1,5 +1,5 @@
 body {
-    background: #233132;
+    background: linear-gradient(135deg, #5e7d78, #384b49;
     font-family: Arial, Helvetica, sans-serif;
     cursor: url('assets/cursor.png'), auto;
 }
@@ -13,4 +13,5 @@ h1 {
     background: #d0d6d6;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
