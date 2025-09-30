@@ -1,12 +1,16 @@
 body {
     background: #233132;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: url('assets/cursor.png'), auto;
 }
 h1 {
     color: #d0d6d6;
     text-align: center;
 }
 
+
 .about {
     background: #d0d6d6;
+    padding: 20px;
+    border-radius: 8px;
 }
