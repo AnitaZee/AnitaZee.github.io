@@ -9,34 +9,14 @@ h1 {
 }
 
 
-.about {
+.about, .skills, .projects, .contact {
     background: #d0d6d6;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-.skills {
-    background: #d0d6d6;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-.projects {
-    background: #d0d6d6;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-.contact {
-    background: #d0d6d6;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
+ /* Scoll */ 
 ::-webkit-scrollbar {
     width: 12px;
 }
