@@ -16,6 +16,14 @@ h1 {
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
+.projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
+    .project {
+        width: 30%;
+        margin: 10px;
+        padding: 20px 10px;
+        background: white; /* pick a color */
+        border-radius: 25%;
+}
 
  /* Scoll */ 
 ::-webkit-scrollbar {
