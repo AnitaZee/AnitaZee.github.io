@@ -9,14 +9,10 @@ h1 {
 }
 
 
-.about, .skills, .projects, .contact {
-    background: #d0d6d6;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-.projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
+.projects {
+    display:flex; 
+    flex-wrap:wrap; 
+} 
     .project {
         width: 30%;
         margin: 10px;
