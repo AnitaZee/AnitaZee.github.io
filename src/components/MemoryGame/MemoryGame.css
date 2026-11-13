@@ -1,0 +1,219 @@
+
+.memory-page {
+  background: #384b49;
+  color: #f0f4f2;
+  font-family: "Fredoka", sans-serif;
+  padding: 80px 20px;
+}
+
+.memory-container {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.memory-heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.memory-eyebrow {
+  color: #a8c4b8;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+
+.memory-heading h1 {
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+  margin: 12px 0;
+  color: #f0f4f2;
+}
+
+.memory-heading p {
+  color: #d0d6d6;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.memory-scores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.memory-score {
+  background: #5e7d78;
+  border-radius: 20px;
+  padding: 22px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.memory-score span {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.memory-score strong {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.memory-score small {
+  color: #d0d6d6;
+}
+
+.memory-game-card {
+  background: #5e7d78;
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.memory-game-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-bottom: 16px;
+}
+
+.memory-game-content {
+  min-height: 350px;
+  background: #384b49;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.memory-state {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  animation: memory-appear 0.3s ease;
+}
+
+.memory-state h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #f0f4f2;
+}
+
+.memory-state p {
+  max-width: 420px;
+  line-height: 1.6;
+  color: #d0d6d6;
+  margin: 0;
+}
+
+.memory-emoji {
+  font-size: 3.5rem;
+}
+
+.memory-number {
+  max-width: 100%;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 600;
+  letter-spacing: 4px;
+  overflow-wrap: anywhere;
+  color: #f0f4f2;
+}
+
+.memory-result-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+  color: #f5c7a9;
+}
+
+.memory-input {
+  width: 100%;
+  max-width: 360px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid #a8c4b8;
+  background: #f0f4f2;
+  color: #384b49;
+  font-family: inherit;
+  font-size: 1.3rem;
+  text-align: center;
+  outline: none;
+}
+
+.memory-input:focus {
+  border-color: #f5c7a9;
+}
+
+.memory-button {
+  background: #a8c4b8;
+  color: #263936;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 32px;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.memory-button:hover {
+  background: #d0d6d6;
+  transform: translateY(-2px);
+}
+
+.memory-progress {
+  width: min(100%, 350px);
+  height: 7px;
+  background: #5e7d78;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.memory-progress div {
+  height: 100%;
+  background: #f5c7a9;
+  animation: memory-countdown linear forwards;
+}
+
+.memory-footer-note {
+  text-align: center;
+  margin-top: 28px;
+  font-size: 0.85rem;
+  color: #a8c4b8;
+}
+
+@keyframes memory-countdown {
+  from { width: 100%; }
+  to { width: 0%; }
+}
+
+@keyframes memory-appear {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  .memory-page { padding: 80px 14px 40px; }
+  .memory-game-card { padding: 14px; }
+  .memory-score { padding: 16px 8px; }
+  .memory-score strong { font-size: 2.3rem; }
+  .memory-game-content { min-height: 330px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .memory-state,
+  .memory-progress div {
+    animation: none;
+  }
+}

@@ -1,5 +1,6 @@
 
 import './App.css'
+import MemoryGame from "./components/MemoryGame/MemoryGame";
 
 const projects = [
   {
@@ -57,6 +58,7 @@ function App() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
+          <a href="#game">Play a Game</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
@@ -173,6 +175,11 @@ function App() {
               </span>
             ))}
           </div>
+        </section>
+
+        {/* BEAT THE DEVELOPER GAME */}
+        <section id="game" className="game-section">
+          <MemoryGame />
         </section>
 
         <section className="section contact-section" id="contact">
